@@ -1,0 +1,38 @@
+<table border='1'>
+  <tr>
+    <th>ID</th>
+    <th>CaseNumber</th>
+    <th>casename</th>
+        <th>casestatus</th>
+        <th>hospitalid</th>
+    <th>surgerydate</th>
+    <th>patientname</th>
+    <th>age</th>
+    <th>dob</th>
+    <th>gender</th>
+    <th>speciality</th>
+    <th>surgeonid</th>
+    <th>status</th>
+    <th>phone</th>
+    <th>patientdiagnostics</th>
+    <th>bookfavphysician</th>
+    <th>isactive</th>
+    <th>hospitalotroomid</th>
+    <th>createdby</th>
+    <th>createdon</th>
+    <th>updatedby</th>
+    <th>updatedon</th>
+
+  </tr>
+  {% for x in mymembers %}
+    <tr>
+      <td>{{ x.id }}</td>
+        <td>{{ x.CaseNumber }}</td>
+      <td>{{ x.casename }}</td><td>{{ x.casestatus }}</td><td>{{ x.hospitalid }}</td><td>{{ x.casename }}</td><td>{{ x.surgerydate }}</td>
+      <td>{{ x.patientname }}</td><td>{{ x.age }}</td><td>{{ x.dob }}</td><td>{{ x.gender }}</td><td>{{ x.speciality }}</td>
+      <td>{{ x.surgeonid }}</td><td>{{ x.status }}</td><td>{{ x.phone }}</td><td>{{ x.patientdiagnostics }}</td><td>{{ x.bookfavphysician }}</td>
+      <td>{{ x.isactive }}</td><td>{{ x.hospitalotroomid }}</td><td>{{ x.createdby }}</td><td>{{ x.createdon }}</td><td>{{ x.updatedby }}</td>
+      <td>{{ x.updatedon }}</td>
+    </tr>
+  {% endfor %}
+</table>
